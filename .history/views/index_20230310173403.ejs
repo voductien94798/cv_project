@@ -30,12 +30,12 @@
           field to develop complex project with efficiency and quality.
         </p>
       </div>
-      <div id="work">
+      <div id="education">
         <h3>Education</h3>
         <table>
           <% edu.forEach(function(edu) { %>
-          <tr class="work-1">
-            <td><%= edu.start %> - <%=edu.end %></td>
+          <tr class="school">
+            <td rowspan="5"><%= edu.start %> - <%=edu.end %></td>
             <td><b><%= edu.school %></b>: <%edu.school %> (<%= edu.des %>)</td>
           </tr>
           <%}); %>
@@ -53,14 +53,34 @@
         </table>
       </div>
       <div id="bio-data">
-        <h3>SKILL</h3>
+        <h3>Bio-Data</h3>
         <table>
-          <% skis.forEach(ski => { %>
           <tr>
-            <td><%= ski.skill %>:</td>
-            <td><b><%= ski.per %></b></td>
+            <td>F'Name:</td>
+            <td><b>Naseem Akhter</b></td>
           </tr>
-          <% }) %>
+          <tr>
+            <td>Date of Birth:</td>
+            <td>
+              <b>25<sup>th</sup> November 1996</b>
+            </td>
+          </tr>
+          <tr>
+            <td>CNIC:</td>
+            <td><b>42401-XXXXXXX-7</b></td>
+          </tr>
+          <tr>
+            <td>Religion:</td>
+            <td><b>Islam</b></td>
+          </tr>
+          <tr>
+            <td>Nationality:</td>
+            <td><b>Pakistani</b></td>
+          </tr>
+          <tr>
+            <td>Marital Status:</td>
+            <td><b>Unmarried</b></td>
+          </tr>
         </table>
       </div>
     </div>
